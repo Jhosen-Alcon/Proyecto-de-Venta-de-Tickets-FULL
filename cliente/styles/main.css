@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: absolute;
+    align-items: center;
+    justify-content: center;
+    background: url(https://www.bbva.com/wp-content/uploads/2020/05/festival2-1024x629.jpg);
+    transition: all 0.5s linear;
+    filter: grayscale(100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrap:hover {
+    filter: grayscale(0%);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    width: 300px;
+    border-radius: 51px;
+    background-color: linear-gradient(154deg, #eae1e1, #c5bdbd);
+    box-shadow: 23px 23px 40px #a09999, -23px -23px 40px #ffffff;
+}
+
+.contentForm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactForm h1 {
+    position: absolute;
+    top: 70px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    transition: 0, 7s;
+    text-align: center;
+}
+
+.contactForm h1:hover {
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.inputBox label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.inputBox input {
+    padding: 5px 30px;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.5s;
+    border-radius: 25px;
+    background: transparent;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+    color: #000;
+    box-shadow: inset 300px 0 #fff;
+}
+
+.contactForm button {
+    position: absolute;
+    bottom: 100px;
+    padding: 7px 45px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.contactForm button:hover {
+    transform: scale(110%);
+    background-color: #fff;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.contactForm p {
+    font-size: 15px;
+    color: #fff;
+}
